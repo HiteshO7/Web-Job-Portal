@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="pic/prism.png" type="image/x-icon" />
+    <title>JobSeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="JobSeek.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <ion-icon name="prism" class="lo"></ion-icon>
+          <a href="" class="loo">JobSeek</a>
+        </div>
+        <ul class="links">
+          <li><a href="#Home" class="tean">Home</a></li>
+          <li><a href="#Job" class="tean">Job</a></li>
+          <li><a href="#Explore" class="tean">Explore</a></li>
+          <li><a href="#Category" class="tean">Category</a></li>
+          <li><a href="#Ans" class="tean">Q & Answers</a></li>
+          <li><a href="login_form.php" class="tean">Log-Out</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" class="tean1">Admin</a>
+            <a href="Job_Post.html" class="action_btn">Post Job</a>
+          </li>
+        </ul>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-list"></i>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#Home" class="tean">Home</a></li>
+          <li><a href="#Job" class="tean">Job</a></li>
+          <li><a href="#Explore" class="tean">Explore</a></li>
+          <li><a href="#Category" class="tean">Category</a></li>
+          <li><a href="#Pages" class="tean">Pages</a></li>
+          <a href="#" class="tean1">Log-in/out</a>
+          <a href="Job_Post.html" class="action_btn" onclick="URL">Post Job</a>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <h1 class="mm">
+        Find & Hire <br />
+        Experts For any Job
+      </h1>
+
+      <p class="mm">
+        Jobs & Job search. Find jobs in global. Executive jobs & work.
+      </p>
+      <div class="search">
+        <div class="selectt">
+          <p class="search_catoo">Job Category:</p>
+          <select id="categorySelect" onchange="updateFilterJobTitles()">
+            <option value="">Select a category</option>
+            <option value="Software">Software Development</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Finance">Finance</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Customer">Customer Service</option>
+            <option value="Human">Human Resources</option>
+            <option value="Sales">Sales</option>
+            <option value="Legal">Legal</option>
+            <option value="Operations">Operations</option>
+            <option value="Research">Research and Development</option>
+            <option value="Media">Media and Communications</option>
+            <option value="Retail">Retail</option>
+          </select>
+        </div>
+        <div class="selectt">
+          <p class="search_catoo">Keyword or Title</p>
+          <select id="titleSelect">
+            <option value="">Select a job title</option>
+          </select>
+        </div>
+        <div class="selecttt">
+          <button onclick="searchJobs()" class="sea">Search</button>
+        </div>
+      </div>
+      <div class="slo">
+        <p><b>Popular:</b>Design,Art,Businuss,Video Editing</p>
+      </div>
+      <div class="cologo">
+        <div class="coldiv">
+          <img src="pic/Google.png" alt="" class="coll" />
+        </div>
+        <div class="coldiv">
+          <img src="pic/shipbob.jpg" alt="" class="coll" />
+        </div>
+        <div class="coldiv">
+          <img src="pic/dribble.png" alt="" class="coll" />
+        </div>
+        <div class="coldiv">
+          <img src="pic/slack.png" alt="" class="coll" />
+        </div>
+        <div class="coldiv"><img src="pic/vine.png" alt="" class="coll" /></div>
+      </div>
+    </section>
+
+    <section class="cat" id="Category">
+      <h1 class="cato">More Demanding categories.</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/user.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Customer Marketing & Sales
+            <p class="vanc">1275 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/pen-tool.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Design & <br />Development
+            <p class="vanc">4745 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/mark.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Business <br />
+            & Marketing
+            <p class="vanc">475 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/buss.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Business <br />
+            Development
+            <p class="vanc">7323 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/pro.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Program & <br />
+            Code
+            <p class="vanc">12575 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/edit.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Video Editing <br />
+            & 3D Work
+            <p class="vanc">5475 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="icon">
+            <img src="pic/art.png" alt="" class="catlogo" />
+          </div>
+          <div class="name">
+            Art & <br />
+            Animation
+            <p class="vanc">7645 Vacancy</p>
+          </div>
+        </div>
+        <div class="grid-item1">
+          <div class="top">
+            13k + <br />
+            <p class="gridd">Job already posted</p>
+          </div>
+          <div class="lastimg">
+            <img src="pic/up-arrow.png" alt="" class="left" /><img
+              src="pic/right.png"
+              alt=""
+              class="left"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how">
+      <h1 class="how-h1">How it's work?</h1>
+      <div class="userr">
+        <div class="grid-container3">
+          <div class="grid-item3">
+            <ion-icon name="person-circle-outline" class="ion-ico"></ion-icon>
+            <h3>Create Account</h3>
+            <p>It's very wasy to open an account and start your journey.</p>
+          </div>
+          <div class="grid-item3 small-width">
+            <img src="pic/arrow.png" alt="" class="howw" />
+          </div>
+          <div class="grid-item3">
+            <ion-icon name="reader-outline" class="ion-ico"></ion-icon>
+            <h3>Complete your profile</h3>
+            <p>
+              Complete your profile wiht all the info to gwt attention of
+              clients
+            </p>
+          </div>
+          <div class="grid-item3 small-width">
+            <img src="pic/arrow.png" alt="" class="howw" />
+          </div>
+          <div class="grid-item3">
+            <ion-icon name="brush-outline" class="ion-ico"></ion-icon>
+            <h3>Apply job or hire</h3>
+            <p>
+              Apply and get prefereable job with all the requirement and get it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ous" id="Explore">
+      <div class="loggo">
+        <img src="pic/zz.png" alt="" />
+      </div>
+      <div class="about-ous">
+        <a href="" class="about_a">Why choose us?</a>
+        <h1 class="about_h1">World of talent at your fingertips</h1>
+        <ul class="accordion">
+          <li>
+            <input
+              type="radio"
+              name="accordion"
+              id="first"
+              class="ac"
+              checked
+            />
+            <label for="first" class="acco">Seamless Search</label>
+            <div class="content">
+              <p>
+                Say goodbye to the endless scrolling through irrelevant profiles. Our platform employs advanced algorithms to tailor search results specifically to your needs. Whether you're looking for a seasoned executive or a fresh graduate, our intuitive search functionality ensures you find the perfect match with ease. Refine your search by skills, experience, location, and more, all with a few clicks.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="second" class="ac" />
+            <label for="second" class="acco">Hire top talents</label>
+            <div class="content">
+              <p>
+                Quality is our priority. We've curated a pool of top-tier talent spanning various industries and expertise. From tech wizards to creative geniuses, we've got you covered. Each candidate undergoes a rigorous screening process, ensuring you only connect with the best of the best. Whether you're scaling your startup or expanding your enterprise, trust us to provide you with the talent that drives success.Quality is our priority.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="third" class="ac" />
+            <label for="third" class="acco"
+              >Protected payments,every time</label
+            >
+            <div class="content">
+              <p>
+                Every Time: Your peace of mind matters to us. With our secure payment system, you can hire with confidence, knowing that your transactions are protected every step of the way. Say goodbye to payment disputes and uncertainties. We facilitate transparent and secure transactions, ensuring that both parties are satisfied with every deal. Focus on building your team while we take care of the financial logistics.
+wite them in 20-40 words
+              </p>
+            </div>
+          </li>
+        </ul>
+        <button class="our-btn">Learn more</button>
+      </div>
+    </section>
+
+    <section class="company" id="Job">
+      <div class="company-div">
+        <h1 class="company-head">Top Company</h1>
+        <div class="grid-container4">
+          <div class="grid-item4">
+            <img src="pic/discord.png" alt="Discord" class="company-logo" />
+            <h1 class="company-h1">Discord</h1>
+            <p class="company-p">
+              Gaming-focused communication platform with text, voice, and video.
+            </p>
+            <button class="company-btn">2 Open Jobs</button>
+          </div>
+          <div class="grid-item4">
+            <img src="pic/nvidia.png" alt="Nvidia" class="company-logo" />
+            <h1 class="company-h1">Nvidia</h1>
+            <p class="company-p">
+              Technology powerhouse renowned for GPUs powering gaming.
+            </p>
+            <button class="company-btn">5 Open Jobs</button>
+          </div>
+          <div class="grid-item4">
+            <img src="pic/twitch.png" alt="Twitch" class="company-logo" />
+            <h1 class="company-h1">Twitch</h1>
+            <p class="company-p">
+              Leading live streaming platform for gamers and creators.
+            </p>
+            <button class="company-btn">10 Open Jobs</button>
+          </div>
+          <div class="grid-item4">
+            <img src="pic/mcdonalds.png" alt="Mcdonalds" class="company-logo" />
+            <h1 class="company-h1">MacDonals's</h1>
+            <p class="company-p">Global fast-food chain famous for burgers.</p>
+            <button class="company-btn">7 Open Jobs</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <h1 class="review-h1">Trusted by leading <br />startups.</h1>
+      <div class="grid-container5">
+        <div class="grid-item5">
+          <div class="iteam-top">
+            <ion-icon name="logo-amazon" class="review-logo"></ion-icon>
+            <h1>Amazon.in</h1>
+          </div>
+          <div class="iteam-mid">
+            <p>
+              "Incredibly proud of this team's effort! This latest design
+              iteration is a huge step forward."
+            </p>
+            <p class="review-name">Rashed Kabir,Lead designer</p>
+          </div>
+          <div class="item-bot">
+            <div class="review-word"><h1>4.5 Excellent</h1></div>
+            <div class="review-star">
+              <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+              ><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+              ><ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item5-1">
+          <div class="iteam-top">
+            <ion-icon name="logo-discord" class="review-logo"></ion-icon>
+            <h1>Discord.com</h1>
+          </div>
+          <div class="iteam-mid">
+            <p>
+              "Meme Monday! Share your funniest [product/industry] related memes
+              and let's have a laugh "
+            </p>
+            <p class="review-name">Hitesh Thakur,Marketing Lead</p>
+          </div>
+          <div class="item-bot">
+            <div class="review-word"><h1>4.8 Excellent</h1></div>
+            <div class="review-star">
+              <ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+              ><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon
+              ><ion-icon name="star-half"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qna" id="Ans">
+      <h1 class="qna-h1">Question & Answers</h1>
+      <div>
+        <ul class="accordionf">
+          <li class="accordionli">
+            <input
+              type="radio"
+              name="accordion"
+              id="firstf"
+              class="acf"
+              checked
+            />
+            <label for="firstf" class="accof"
+              >How does the free trial work?</label
+            >
+            <div class="contentf">
+              <p>
+                Our free trial allows you to explore JobSeek's features and
+                services for a limited time without any cost. During the trial
+                period, you'll have access to basic features such as searching
+                for jobs, creating a profile, and applying to a limited number
+                of job postings. After the trial period ends, you'll have the
+                option to subscribe to a paid plan to continue accessing premium
+                features.
+              </p>
+            </div>
+          </li>
+
+          <li class="accordionli">
+            <input type="radio" name="accordion" id="secondf" class="acf" />
+            <label for="secondf" class="accof"
+              >How do you find different criteria in your process?</label
+            >
+            <div class="contentf">
+              <p>
+                At JobSeek, we utilize advanced search filters and algorithms to
+                help you find job listings that match your specific criteria.
+                You can customize your search by factors such as location,
+                industry, job type, salary range, and required qualifications.
+                Our goal is to streamline the job search process and connect you
+                with opportunities that align with your preferences and skills.
+              </p>
+            </div>
+          </li>
+
+          <li class="accordionli">
+            <input type="radio" name="accordion" id="thirdf" class="acf" />
+            <label for="thirdf" class="accof"
+              >What do you look for in a founding team?</label
+            >
+            <div class="contentf">
+              <p>
+                When evaluating a founding team, we look for a combination of
+                skills, experience, and passion. A strong founding team
+                typically consists of individuals with complementary skill sets,
+                a deep understanding of the industry, and a shared vision for
+                the company's growth. We also value traits such as creativity,
+                resilience, and the ability to adapt to challenges. Ultimately,
+                we seek teams that demonstrate the potential to execute their
+                business plan effectively and drive long-term success.
+              </p>
+            </div>
+          </li>
+          <li class="accordionli">
+            <input type="radio" name="accordion" id="forthf" class="acf" />
+            <label for="forthf" class="accof"
+              >Do you recommend Paa as you go or Pre pay?</label
+            >
+            <div class="contentf">
+              <p>
+                The choice between Pay-as-you-go (Paa) and Prepay depends on
+                your preferences and usage patterns. Pay-as-you-go allows you to
+                pay for services as you use them, offering flexibility and
+                scalability. Prepay, on the other hand, involves paying upfront
+                for a set amount of service, often at a discounted rate. If you
+                anticipate using JobSeek frequently and want to save money in
+                the long run, prepaying may be a better option. However, if you
+                prefer to pay only for what you use, Pay-as-you-go might be more
+                suitable.
+              </p>
+            </div>
+          </li>
+          <li class="accordionli">
+            <input type="radio" name="accordion" id="fifthf" class="acf" />
+            <label for="fifthf" class="accof"
+              >What do I get for $0 with my plan?</label
+            >
+            <div class="contentf">
+              <p>
+                With our free plan, you can access basic features and services
+                on JobSeek at no cost. This includes creating a profile,
+                searching for job listings, and applying to a limited number of
+                positions. While the free plan has some limitations compared to
+                our paid plans, it still provides valuable resources to aid you
+                in your job search journey.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv">
+      <div class="ccv">
+        <h1 class="cv-h1">
+          Get your <br />
+          Matched Job in a <br />
+          few minutes.
+        </h1>
+        <p class="cv-p">
+          Find your dream job & earn from world leading <br />brands. Upload
+          your CV now.
+        </p>
+        <input type="file" id="file" name="file" style="display: none" />
+        <button class="cv-button">
+          <ion-icon name="cloud-upload-outline" class="cv-icon"></ion-icon
+          >Upload your CV
+        </button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <ion-icon name="prism" class="footer-lo"></ion-icon>
+          <a href="" class="footer-loo">JobSeek</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h1 class="footer-h1">Products</h1>
+        <ul class="footer-links">
+          <li><a href="#">Take the tour</a></li>
+          <li><a href="#">Live chat</a></li>
+          <li><a href="#">Self-service</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">Collaboration</a></li>
+          <li><a href="#">Review</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h1 class="footer-h1">Links</h1>
+        <ul class="footer-links">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h1 class="footer-h1">Legal</h1>
+        <ul class="footer-links">
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h1 class="footer-h1">Newsletter</h1>
+        <h3 class="footer-h3">Join & get important new regularly</h3>
+        <div class="footer-search">
+          <div class="footer-search-container">
+            <div class="footer-search-box">
+              <input type="text" placeholder="Search..." />
+
+              <input type="submit" value="Search" />
+            </div>
+          </div>
+          <p class="footer-p">We only send interesting and relevant emails</p>
+          <h1 class="footer-com">www.JobSeek.com</h1>
+        </div>
+      </div>
+    </footer>
+    <footer class="second-footer">
+      <a href="#">Privacy & Terms</a>
+      <a href="#">Contact Us</a>
+      <div class="social-icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+      </div>
+      <p>&copy; 2024 Seek.inc</p>
+    </footer>
+
+    <script src="JobSeek.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

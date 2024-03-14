@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Job</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Job_Post.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+          <div class="logo"><ion-icon name="prism" class="lo"></ion-icon> <a href="" class="loo">JobSeek</a> </div>
+          <ul class="links">
+              <li><a href="#Job1" class="tean">Job Details</a></li>
+              <li><a href="#Package" class="tean">Package & Payment</a></li>
+              <li><a href="#Confirmation" class="tean">Confirmation</a></li> 
+          </ul>
+            
+          <div class="toggle_btn">
+              <i class="fa-solid fa-list"></i>
+          </div>
+          <div class="dropdown_menu">
+              <li><a href="#Job1" class="tean">Job Details</a></li>
+              <li><a href="#Package" class="tean">Package & Payment</a></li>
+              <li><a href="#Confirmation" class="tean">Confirmation</a></li> 
+          </div>
+
+
+      </div>
+  </header>
+    <section class="job" id="Job1">
+      <div class="Job_title">
+        <label for="title">Job Title</label>
+        <input type="text" id="jobTitle" placeholder="Enter Job Name" />
+      </div>
+      <div class="description">
+        <label for="Description">Description *</label>
+        <input type="text" class="desc" placeholder="Enter Description" required>
+      </div>
+
+      <div class="email_user">
+        <div class="mail">
+          <label for="">Email Address *</label>
+          <input type="text" placeholder="Enter Email"/>
+        </div>
+        <div class="user">
+          <label for="">Username *</label>
+          <input type="text" placeholder="Enter USername"/>
+        </div>
+      </div>
+
+      <div class="basic">
+        <div class="deadline">
+          <label for="">Application Deadline</label>
+          <input type="date" />
+        </div>
+        <div class="sector">
+          <label for="">Job Sector *</label>
+          <select class="job_sect">
+            <option value="">Accountancy</option>
+            <option value="">Architecture</option>
+            <option value="">Finance</option>
+            <option value="">Education</option>
+            <option value="">Engineering</option>
+            <option value="">State Agency</option>
+            <option value="">It Contractor</option>
+            <option value="">Law</option>
+          </select>
+        </div>
+        <div class="type">
+          <label for="">Job Type</label>
+          <select name="" id="">
+            <option value="">Sales & Marketing</option>
+            <option value="">Human Resources</option>
+            <option value="">IT Contractor</option>
+          </select>
+        </div>
+      </div>
+      <div class="apply_type">
+        <label for="">Job Apply Type</label>
+        <select name="" id="">
+          <option value="">Sales & Marketing</option>
+          <option value="">Human Resources</option>
+          <option value="">IT Contractor</option>
+        </select>
+      </div>
+
+      <div class="salary">
+        <div class="number">
+          <label for="">Salary</label>
+          <input
+            type="number"
+            pattern="[0-9]"
+            placeholder="Enter salary"
+            class="salary_number"
+          />
+        </div>
+        <div class="min_max">
+          <div class="min">
+            <label for="">₹ Min</label>
+            <input type="number" />
+          </div>
+          <div class="max">
+            <label for="">₹ Max</label>
+            <input type="number" />
+          </div>
+        </div>
+      </div>
+
+      <div class="place">
+        <div class="state">
+          <label for="">State</label>
+          <select id="states">
+            <option value="">Select a State/Union Territory</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">
+              Andaman and Nicobar Islands
+            </option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">
+              Dadra and Nagar Haveli and Daman and Diu
+            </option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Ladakh">Ladakh</option>
+          </select>
+        </div>
+        <div class="currency">
+          <label for="">Currency position</label>
+          <select id="currencies">
+            <option value="">Select a Currency</option>
+            <option value="USD">United States Dollar (USD)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="information" >
+      <div class="offered">
+        <div class="off_salary">
+          <label for="">Offered Salary</label>
+          <select name="" id="">
+            <option value="">₹10000</option>
+            <option value="">₹30000</option>
+            <option value="">₹45000</option>
+            <option value="">₹60000</option>
+            <option value="">₹80000</option>
+            <option value="">₹120000</option>
+          </select>
+        </div>
+        <div class="level">
+          <label for="">Career level</label>
+          <select name="" id="">
+            <option value="">Entry-Level</option>
+            <option value="">Mid-Level</option>
+            <option value="">Senior-Level</option>
+            <option value="">Executive-Level</option>
+            <option value="">Specialist/Subject Matter Expert</option>
+            <option value="">Consultant/Freelancer</option>
+          </select>
+        </div>
+      </div>
+      <div class="exp">
+        <div class="experience">
+          <label for="">Experience *</label>
+          <select name="" id="">
+            <option value="">6M Experience</option>
+            <option value="">9M Experience</option>
+            <option value="">1Y Experience</option>
+            <option value="">2Y Experience</option>
+            <option value="">4Y Experience</option>
+            <option value="">5Y+ Experience</option>
+          </select>
+        </div>
+        <div class="gender">
+          <label for="">Gender*</label>
+          <select name="" id="">
+            <option value="">Male</option>
+            <option value="">Female</option>
+          </select>
+        </div>
+      </div>
+      <div class="ind">
+        <div class="industry">
+          <label for="">Industry</label>
+          <select name="" id="">
+            <option value="">Select an Industry</option>
+            <option value="Information Technology">
+              Information Technology (IT)
+            </option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Finance">Finance</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Retail">Retail</option>
+            <option value="Hospitality and Tourism">
+              Hospitality and Tourism
+            </option>
+            <option value="Automotive">Automotive</option>
+            <option value="Construction">Construction</option>
+            <option value="Energy">Energy</option>
+            <option value="Education">Education</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Entertainment and Media">
+              Entertainment and Media
+            </option>
+          </select>
+        </div>
+        <div class="qualification">
+          <label for="">Qualification</label>
+          <select name="" id="">
+            <option value="">Select a Qualification</option>
+            <option value="High School Diploma">High School Diploma</option>
+            <option value="Associate's Degree">Associate's Degree</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="PhD or Doctorate">PhD or Doctorate</option>
+            <option value="Vocational Certificate">
+              Vocational Certificate
+            </option>
+            <option value="Professional Certification">
+              Professional Certification
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="postbtns">
+        <button id="postButton" class="postbtn">Post Job</button>
+      </div>
+    </section>
+
+    <section class="offer" id="Package">
+      <div class="plans-container">
+        <div class="plan">
+          <div class="head">
+            <h2>Basic Plan</h2>
+          </div>
+          <div class="mid">
+            <p><strong>Package Cost:</strong> ₹40,000/month</p>
+            <p>
+              <strong>Job Listings:</strong> Up to 50 job postings per month
+            </p>
+            <p><strong>Featured Listings:</strong>Up to 2 featured job listings
+              per month</p>
+            <p><strong>Resume Access:</strong> Limited resume views</p>
+            <p><strong>Expiry:</strong> Monthly auto-renewal</p>
+          </div>
+          <div class="last">
+            <button id="button1" onclick="toggleText('button1')">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="head"><h2>Standard Plan</h2></div>
+          <div class="mid">
+            <p><strong>Package Cost:</strong> ₹70,000/month</p>
+            <p>
+              <strong>Job Listings:</strong> Up to 100 job postings per month
+            </p>
+            <p>
+              <strong>Featured Listings:</strong> Up to 5 featured job listings
+              per month
+            </p>
+            <p><strong>Resume Access:</strong> Increased resume views</p>
+            <p><strong>Expiry:</strong> Monthly auto-renewal</p>
+          </div>
+          <div class="last">
+            <button id="button2" onclick="toggleText('button2')">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="head">
+            <h2>Premium Plan</h2>
+          </div>
+          <div class="mid">
+            <p><strong>Package Cost:</strong> ₹1,20,000/month</p>
+            <p>
+              <strong>Job Listings:</strong> Unlimited job postings per month
+            </p>
+            <p>
+              <strong>Featured Listings:</strong> Up to 10 featured job listings
+              per month
+            </p>
+            <p><strong>Resume Access:</strong> Unlimited resume views</p>
+            <p><strong>Expiry:</strong> Monthly auto-renewal</p>
+          </div>
+          <div class="last">
+            <button id="button3" onclick="toggleText('button3')">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="conform" id="Confirmation">
+      <div class="conf">
+        <img src="pic/clipboard.png" alt="" />
+        
+        <h1>Thank You For Submitting</h1>
+        <p>
+          Thanks you for Submitting, your hob has been published, If you need
+          hemp please contact us via <br>Email support@JobSeek.com
+        </p>
+        <div class="butt">
+          <button>Manage Job</button><button>View Job</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleText(buttonId) {
+        var button = document.getElementById(buttonId);
+        if (button.textContent === "Subscribe") {
+          button.textContent = "Subscribed";
+          button.style.color = "black";
+          button.style.backgroundColor = "#cde1f4"; // Change text color to green
+        } else {
+          button.textContent = "Subscribe";
+          button.style.backgroundColor = "";
+          button.style.color = ""; // Reset text color to default
+        }
+      }
+
+      document.getElementById("postButton").addEventListener("click", function() {
+  // Redirect to home.html with query parameter
+  window.location.href = "JobSeek_Admin.html?jobPosted=true";
+});
+
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

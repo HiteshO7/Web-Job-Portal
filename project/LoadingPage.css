@@ -1,0 +1,71 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sans' , sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+   
+.loo{
+   font-family: "Istok Web", sans-serif;
+   color: rgb(0, 0, 0);
+   font-size: 1.5rem;
+   font-weight: 700;
+   text-decoration: none;
+}
+.lo{
+   margin-top: -1px;
+   margin-right: 0.5rem;
+   font-size: 1.7rem;
+   color: rgb(0, 0, 0);
+   
+} 
+.logo{
+   display: flex;
+   align-items: center;
+} 
+header{
+   position: relative;
+   padding: 0 2rem;    
+     
+}
+
+.navbar{
+   width: 100%;
+   height: 70px;
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+} 
+ 
+@media(max-width: 992px){
+   .navbar .links,
+   .navbar .action_btn,
+   .navbar .tean1{
+       display: none;
+   }
+
+   .navbar .toggle_btn{
+       display: block;
+   }
+
+   .dropdown_menu .action_btn, 
+   .dropdown_menu .tean1{
+       display: block;
+   }
+   
+}
+
+@media (max-width: 576px) {
+   .dropdown_menu{
+       left: 2rem;
+       width: unset;
+   }
+   
+}

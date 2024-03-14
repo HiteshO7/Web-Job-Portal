@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e3edf7;
+}
+
+.accordion-f{
+    margin: 60px auto;
+    width: 600px;
+}
+
+.accordion-f li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0 ,0,0.15),
+                 -6px -6px 10px -1px rgba(255, 255, 255, 0.7)
+}
+
+.accordion-f li .acco-f{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.acco-f::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion-f .content-f{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 0.5s, padding 0.5s;
+}
+
+.accordion-f input[type="radio"]:checked + .acco-f + .content-f{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+.accordion-f input[type="radio"]:checked + .acco-f::before{
+    content: '-';
+}

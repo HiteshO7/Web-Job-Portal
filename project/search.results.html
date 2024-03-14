@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Welcome
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get category and title from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            const title = urlParams.get('title');
+
+            // Filter job listings based on category and title
+            const filteredJobs = filterJobs(category, title);
+
+            // Display job listings
+            displayJobListings(filteredJobs);
+        });
+
+        // Your existing job listings array
+        const jobListings = [
+            // Job listings array here
+        ];
+
+        // Your existing filterJobs function
+        // Your existing displayJobListings function
+    </script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #e3edf7 !important;
+}
+
+.loo {
+  font-family: "Istok Web", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.lo {
+  margin-top: -1px;
+  margin-right: 0.5rem;
+  font-size: 1.7rem;
+  color: rgb(0, 0, 0);
+}
+
+li {
+  list-style: none !important;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none !important;
+  position: relative;
+  color: black !important;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+a.tean1 {
+  border-style: solid !important;
+  border-width: 2px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+.tean1:hover {
+  background-color: rgba(97, 96, 96, 0.312);
+}
+a.tean::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+  color: rgba(0, 0, 0, 0.622);
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  border: none;
+  background-color: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo .a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0055ff;
+  background-color: rgb(0, 47, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+
+.action_btn:hover {
+  transform: scale(1.1);
+  color: rgb(0, 0, 0);
+}
+
+.action_btn:active {
+  transform: scale(0.95);
+}
+
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(39, 75, 233, 0.495);
+  backdrop-filter: blur(18px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn .tean1 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .action_btn,
+  .navbar .tean1 {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu .action_btn,
+  .dropdown_menu .tean1 {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+body .container {
+  max-width: 1100px;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #ffffff;
+  border-color: transparent;
+  font-family: "DM Sans", sans-serif;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+
+#filterable-cards .card {
+  width: 20rem;
+  height: 23rem;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 10px 10px 0px 10px !important;
+  background-color: #e3edf7;
+  border: 2px solid rgba(0, 0, 0, 0.167);
+}
+.top {
+  background-color: rgba(0, 255, 255, 0.364);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 450px;
+  padding: 5px;
+}
+ 
+.top .date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-family: "DM Sans", sans-serif;
+}
+.top .date-btn {
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 40px;
+  font-size: 12px;
+}
+.top .name {
+  margin-bottom: 20px;
+}
+.top .name h1 {
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+.top .name .job-name {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.top .name .job-name h1 {
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.top .name .job-name ion-icon {
+  font-size: 46px;
+}
+
+.top .tags{
+    bottom: 0;
+}
+.top .tags button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding: 3px;
+  font-family: "DM Sans", sans-serif;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px !important;
+  bottom: 0;
+  align-items: center;
+}
+.card-body h1 {
+  font-size: 18px;
+}
+.card-body p {
+  font-size: 12px;
+}
+.card-body button {
+  background-color: black;
+  color: #ddd;
+  border-radius: 30px;
+  border: none;
+  padding: 5px;
+  width: 80px;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}

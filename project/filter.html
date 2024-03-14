@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Filterable Image Gallery Bootstrap | CodingNepal</title>
+    <link rel="stylesheet" href="filter.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ionicons@5.0.1/dist/ionicons/ionicons.js"></script>
+    <script src="filter.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <ion-icon name="prism" class="lo"></ion-icon>
+          <a href="" class="loo">JobSeek</a>
+        </div>
+        <ul class="links">
+          <li><a href="#Home" class="tean">Home</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="JobSeek_User.html" class="tean1">Back Home</a>
+          </li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-list"></i>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="JobSeek_User.html" class="tean">Home</a></li>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+  
+      <div class="row mt-5" id="filter-buttons">
+        <div class="col-12">
+          <button class="btn mb-2 me-1 active" data-filter="all">
+            Show all
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Software">
+            Software Development
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Design">Design</button>
+          <button class="btn mb-2 mx-1" data-filter="Marketing">
+            Marketing
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Finance">Finance</button>
+          <button class="btn mb-2 mx-1" data-filter="Healthcare">
+            Healthcare
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Engineering">
+            Engineering
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Customer">
+            Customer Service
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Human">
+            Human Resources
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Sales">Sales</button>
+          <button class="btn mb-2 mx-1" data-filter="Legal">Legal</button>
+          <button class="btn mb-2 mx-1" data-filter="Operations">
+            Operations
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Research">
+            Research and Development
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Media">
+            Media and Communications
+          </button>
+          <button class="btn mb-2 mx-1" data-filter="Retail">Retail</button>
+        </div>
+      </div>
+
+      
+      <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+        <div class="card p-0" data-name="Software" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Amazon</h1></div>
+              <div class="job-name">
+                <h1>Senior UI/UX Designer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags">
+              <button>Part time</button><button>senior level</button
+              ><button>distant</button> <button>Project work</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="pay">
+              <h1>₹ 75000/m</h1>
+              <p>San Franscio</p>
+            </div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+    
+        <div class="card p-0" data-name="Software" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Tech Innovators Ltd.</h1></div>
+              <div class="job-name">
+                <h1>Senior Software Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button> </div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$90,000 - $110,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CodeCrafters Inc. -->
+        <div class="card p-0" data-name="Software" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CodeCrafters Inc.</h1></div>
+              <div class="job-name">
+                <h1>Frontend Developer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- DataDriven Solutions -->
+        <div class="card p-0" data-name="Software" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>DataDriven Solutions</h1></div>
+              <div class="job-name">
+                <h1>Data Scientist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$100,000 - $120,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CloudWorks Technologies -->
+        <div class="card p-0" data-name="Software" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CloudWorks Technologies</h1></div>
+              <div class="job-name">
+                <h1>DevOps Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$80,000 - $90,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- MobileTech Innovations -->
+        <div class="card p-0" data-name="Software" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>MobileTech Innovations</h1></div>
+              <div class="job-name">
+                <h1>iOS Developer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$85,000 - $95,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Creative Minds Agency -->
+        <div class="card p-0" data-name="Design" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Creative Minds Agency</h1></div>
+              <div class="job-name">
+                <h1>Graphic Designer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Visual Harmony Studios -->
+        <div class="card p-0" data-name="Design" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Visual Harmony Studios</h1></div>
+              <div class="job-name">
+                <h1>UX/UI Designer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- PixelPerfect Creations -->
+        <div class="card p-0" data-name="Design" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>PixelPerfect Creations</h1></div>
+              <div class="job-name">
+                <h1>Motion Graphics Designer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- PrintWorks Solutions -->
+        <div class="card p-0" data-name="Design" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>PrintWorks Solutions</h1></div>
+              <div class="job-name">
+                <h1>Print Production Artist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$45,000 - $55,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- BrandGenius Marketing -->
+        <div class="card p-0" data-name="Design" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>BrandGenius Marketing</h1></div>
+              <div class="job-name">
+                <h1>Brand Strategist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$75,000 - $85,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Bright Marketing Solutions -->
+        <div class="card p-0" data-name="Marketing" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Bright Marketing Solutions</h1></div>
+              <div class="job-name">
+                <h1>Marketing Coordinator</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$45,000 - $55,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Social Media Maven -->
+        <div class="card p-0" data-name="Marketing" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Social Media Maven</h1></div>
+              <div class="job-name">
+                <h1>Social Media Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Digital Dynamics Marketing -->
+        <div class="card p-0" data-name="Marketing" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Digital Dynamics Marketing</h1></div>
+              <div class="job-name">
+                <h1>SEO Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- MarketMind Solutions -->
+        <div class="card p-0" data-name="Marketing" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>MarketMind Solutions</h1></div>
+              <div class="job-name">
+                <h1>Market Research Analyst</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- AdvertisePro Agency -->
+        <div class="card p-0" data-name="Marketing" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>AdvertisePro Agency</h1></div>
+              <div class="job-name">
+                <h1>Advertising Account Executive</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Wealth Management Associates -->
+        <div class="card p-0" data-name="Finance" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Wealth Management Associates</h1></div>
+              <div class="job-name">
+                <h1>Financial Analyst</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Capital Investments Inc. -->
+        <div class="card p-0" data-name="Finance" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Capital Investments Inc.</h1></div>
+              <div class="job-name">
+                <h1>Investment Banking Analyst</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Money Matters Consulting -->
+        <div class="card p-0" data-name="Finance" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Money Matters Consulting</h1></div>
+              <div class="job-name">
+                <h1>Financial Planner</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Global Finance Corporation -->
+        <div class="card p-0" data-name="Finance" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Global Finance Corporation</h1></div>
+              <div class="job-name">
+                <h1>Senior Accountant</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Investment Solutions Group -->
+        <div class="card p-0" data-name="Finance" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Investment Solutions Group</h1></div>
+              <div class="job-name">
+                <h1>Portfolio Analyst</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CareWell Hospitals -->
+        <div class="card p-0" data-name="Healthcare" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CareWell Hospitals</h1></div>
+              <div class="job-name">
+                <h1>Registered Nurse</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- MediTech Solutions -->
+        <div class="card p-0" data-name="Healthcare" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>MediTech Solutions</h1></div>
+              <div class="job-name">
+                <h1>Healthcare IT Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Wellness First Clinic -->
+        <div class="card p-0" data-name="Healthcare" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Wellness First Clinic</h1></div>
+              <div class="job-name">
+                <h1>Medical Receptionist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$30,000 - $40,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- LifeCare Pharmaceuticals -->
+        <div class="card p-0" data-name="Healthcare" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>LifeCare Pharmaceuticals</h1></div>
+              <div class="job-name">
+                <h1>Pharmaceutical Sales Representative</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- HealthPro Care -->
+        <div class="card p-0" data-name="Healthcare" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>HealthPro Care</h1></div>
+              <div class="job-name">
+                <h1>Medical Billing Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$40,000 - $50,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- TechGenius Engineering -->
+        <div class="card p-0" data-name="Engineering" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>TechGenius Engineering</h1></div>
+              <div class="job-name">
+                <h1>Mechanical Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$65,000 - $75,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- GreenTech Solutions -->
+        <div class="card p-0" data-name="Engineering" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>GreenTech Solutions</h1></div>
+              <div class="job-name">
+                <h1>Environmental Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CyberTech Innovations -->
+        <div class="card p-0" data-name="Engineering" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CyberTech Innovations</h1></div>
+              <div class="job-name">
+                <h1>Software Engineer (Security)</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$80,000 - $90,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- AeroWorks Aerospace -->
+        <div class="card p-0" data-name="Engineering" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>AeroWorks Aerospace</h1></div>
+              <div class="job-name">
+                <h1>Aerospace Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$75,000 - $85,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CivilStruct Solutions -->
+        <div class="card p-0" data-name="Engineering" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CivilStruct Solutions</h1></div>
+              <div class="job-name">
+                <h1>Structural Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- ServiceMaster Solutions -->
+        <div class="card p-0" data-name="Customer" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>ServiceMaster Solutions</h1></div>
+              <div class="job-name">
+                <h1>Customer Service Representative</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$35,000 - $45,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- SupportPro Inc. -->
+        <div class="card p-0" data-name="Customer" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>SupportPro Inc.</h1></div>
+              <div class="job-name">
+                <h1>Technical Support Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$40,000 - $50,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CareConnect -->
+        <div class="card p-0" data-name="Customer" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CareConnect</h1></div>
+              <div class="job-name">
+                <h1>Customer Experience Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Hospitality Hub -->
+        <div class="card p-0" data-name="Customer" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Hospitality Hub</h1></div>
+              <div class="job-name">
+                <h1>Front Desk Agent</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$30,000 - $40,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- HR Solutions Inc. -->
+        <div class="card p-0" data-name="Human" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>HR Solutions Inc.</h1></div>
+              <div class="job-name">
+                <h1>Human Resources Coordinator</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$45,000 - $55,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- TalentAcquire -->
+        <div class="card p-0" data-name="Human" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>TalentAcquire</h1></div>
+              <div class="job-name">
+                <h1>Talent Acquisition Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- PeopleFirst Consulting -->
+        <div class="card p-0" data-name="Human" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>PeopleFirst Consulting</h1></div>
+              <div class="job-name">
+                <h1>HR Generalist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CultureCrafters -->
+        <div class="card p-0" data-name="Human" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CultureCrafters</h1></div>
+              <div class="job-name">
+                <h1>Employee Relations Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- SalesForce Solutions -->
+        <div class="card p-0" data-name="Sales" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>SalesForce Solutions</h1></div>
+              <div class="job-name">
+                <h1>Sales Representative</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- AccountPro Sales -->
+        <div class="card p-0" data-name="Sales" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>AccountPro Sales</h1></div>
+              <div class="job-name">
+                <h1>Account Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- LeadGenius -->
+        <div class="card p-0" data-name="Sales" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>LeadGenius</h1></div>
+              <div class="job-name">
+                <h1>Sales Development Representative</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$45,000 - $55,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Strategic Sales Solutions -->
+        <div class="card p-0" data-name="Sales" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Strategic Sales Solutions</h1></div>
+              <div class="job-name">
+                <h1>Sales Director</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$80,000 - $90,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- LegalEagle Associates -->
+        <div class="card p-0" data-name="Legal" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>LegalEagle Associates</h1></div>
+              <div class="job-name">
+                <h1>Paralegal</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$40,000 - $50,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- LawWorks LLP -->
+        <div class="card p-0" data-name="Legal" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>LawWorks LLP</h1></div>
+              <div class="job-name">
+                <h1>Associate Attorney</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$80,000 - $90,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- LegalMind Solutions -->
+        <div class="card p-0" data-name="Legal" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>LegalMind Solutions</h1></div>
+              <div class="job-name">
+                <h1>Legal Assistant</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$35,000 - $45,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Corporate Counsel Services -->
+        <div class="card p-0" data-name="Legal" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Corporate Counsel Services</h1></div>
+              <div class="job-name">
+                <h1>Corporate Counsel</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$100,000 - $120,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- OperationsPro Solutions -->
+        <div class="card p-0" data-name="Operations" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>OperationsPro Solutions</h1></div>
+              <div class="job-name">
+                <h1>Operations Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- ProcessWorks Inc. -->
+        <div class="card p-0" data-name="Operations" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>ProcessWorks Inc.</h1></div>
+              <div class="job-name">
+                <h1>Process Improvement Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- LogisticsPlus -->
+        <div class="card p-0" data-name="Operations" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>LogisticsPlus</h1></div>
+              <div class="job-name">
+                <h1>Supply Chain Coordinator</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$45,000 - $55,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Operations Excellence -->
+        <div class="card p-0" data-name="Operations" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Operations Excellence</h1></div>
+              <div class="job-name">
+                <h1>Operations Analyst</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- InnovateR&D Labs -->
+        <div class="card p-0" data-name="Research" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>InnovateR&D Labs</h1></div>
+              <div class="job-name">
+                <h1>Research Scientist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$80,000 - $90,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- FutureTech Research -->
+        <div class="card p-0" data-name="Research" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>FutureTech Research</h1></div>
+              <div class="job-name">
+                <h1>R&D Engineer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$70,000 - $80,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Discovery Dynamics -->
+        <div class="card p-0" data-name="Research" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Discovery Dynamics</h1></div>
+              <div class="job-name">
+                <h1>Product Development Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$65,000 - $75,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Scientific Solutions Inc. -->
+        <div class="card p-0" data-name="Research" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Scientific Solutions Inc.</h1></div>
+              <div class="job-name">
+                <h1>Lab Technician</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$40,000 - $50,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- MediaMaster Productions -->
+        <div class="card p-0" data-name="Media" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>MediaMaster Productions</h1></div>
+              <div class="job-name">
+                <h1>Content Creator</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- CommunicationsConnect -->
+        <div class="card p-0" data-name="Media" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>CommunicationsConnect</h1></div>
+              <div class="job-name">
+                <h1>Public Relations Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$55,000 - $65,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- PressWorks Agency -->
+        <div class="card p-0" data-name="Media" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>PressWorks Agency</h1></div>
+              <div class="job-name">
+                <h1>Media Relations Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$65,000 - $75,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- BroadcastGenius -->
+        <div class="card p-0" data-name="Media" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>BroadcastGenius</h1></div>
+              <div class="job-name">
+                <h1>Broadcast Producer</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$60,000 - $70,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- RetailRise -->
+        <div class="card p-0" data-name="Retail" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>RetailRise</h1></div>
+              <div class="job-name">
+                <h1>Store Manager</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$45,000 - $55,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- SalesWorks Retail -->
+        <div class="card p-0" data-name="Retail" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>SalesWorks Retail</h1></div>
+              <div class="job-name">
+                <h1>Retail Sales Associate</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$30,000 - $40,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- MerchandiseMasters -->
+        <div class="card p-0" data-name="Retail" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>MerchandiseMasters</h1></div>
+              <div class="job-name">
+                <h1>Merchandising Specialist</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$40,000 - $50,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+
+        <!-- Storefront Solutions -->
+        <div class="card p-0" data-name="Retail" id="card-layout">
+          <div class="top">
+            <div class="date">
+              <button class="date-btn">20 May,2023</button
+              ><ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="name">
+              <div class="comp-name"><h1>Storefront Solutions</h1></div>
+              <div class="job-name">
+                <h1>Retail Operations Coordinator</h1>
+                <ion-icon name="logo-amazon"></ion-icon>
+              </div>
+            </div>
+            <div class="tags"><button>Full-time</button></div>
+          </div>
+          <div class="card-body">
+            <div class="pay"><h1>$50,000 - $60,000 per year</h1></div>
+            <div class="details"><button>details</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        var iconNames = ['logo-alipay', 'logo-amazon', 'logo-amplify', 'logo-android', 'logo-angular', 'logo-apple', 'logo-apple-appstore', 'logo-apple-ar', 'logo-behance ', 'logo-bitbucket', 'logo-bitcoin', 'logo-buffer', 'logo-chrome', 'logo-electron', 'logo-discord', 'logo-facebook', 'logo-javascript', 'logo-whatsapp', 'logo-snapchat', 'logo-youtube', 'logo-xbox', 'logo-steam', 'ice-cream', 'logo-python'];
+
+ 
+        var nameIcons = document.querySelectorAll('.name ion-icon');
+        nameIcons.forEach(function(icon) {
+            var randomIndex = Math.floor(Math.random() * iconNames.length); 
+            var randomIconName = iconNames[randomIndex];  
+            icon.setAttribute('name', randomIconName);  
+        });
+
+        var jobNameIcons = document.querySelectorAll('.job-name ion-icon');
+        jobNameIcons.forEach(function(icon) {
+            var randomIndex = Math.floor(Math.random() * iconNames.length);  
+            var randomIconName = iconNames[randomIndex];  
+            icon.setAttribute('name', randomIconName);  
+        });
+ 
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

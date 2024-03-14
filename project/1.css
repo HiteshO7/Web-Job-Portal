@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0px ;
+    box-sizing: border-box;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.job{
+    font-size:  1rem;
+    font-family: 'Lato', sans-serif;
+}
+.logo {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    user-select: none;
+    font-family: "Signika", sans-serif;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight:400;
+    margin-left: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.ser{
+    position: absolute;
+    display: block;
+    height: 60vh;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10vh;
+    
+}
+
+.imma{
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 20px;
+  height: 500px;
+  filter: blur(2px);
+
+}
+
+.h11{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 40%;
+    left:20%;
+    font-size: 3.1vw;
+    font-family: 'Lato', sans-serif;
+}
+.p11{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 50%;
+    left:20%;
+    font-size: 1vw;
+    font-family: 'Lato', sans-serif;
+}
+.search-container {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    width: 400px;
+    padding: 1px 10px;
+    top: 60%;
+    left: 20%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+.search-input {
+    flex: 1;
+    height: 50px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    outline: none; 
+}
+.search-button {
+    background-color: #427afd;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container .logo{
+    
+    font-size: 1.5rem;
+      
+}
+
+.navi{
+     font-size: 1.5rem;   
+}
+
+.fetu{
+    display: block;
+}
+
+.sear{
+    height: 80vh;
+    
+}
+.grid {
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .box {
+    justify-content: space-around;
+
+    background-color: #ffffff;
+    padding: 20px;
+    height: 30vh;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.371);
+  }
+  .view{
+    text-decoration: none;
+
+  }
+  .fetu{
+    justify-content: space-around;
+
+  }
